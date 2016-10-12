@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &144410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462984}
+  - 114: {fileID: 11480030}
+  - 114: {fileID: 11428312}
+  - 114: {fileID: 11417664}
+  - 114: {fileID: 11469992}
+  - 114: {fileID: 11410832}
+  m_Layer: 0
+  m_Name: Simulator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462984
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11410832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0443b98e06b9c6f4ba873d032afd6f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter: {fileID: 0}
+  background: {fileID: 0}
+  none: {fileID: 0}
+  rain1: {fileID: 21300000, guid: 60fd04b067c8814418d48ed823974edb, type: 3}
+  rain2: {fileID: 21300000, guid: 918dff2a40fdc4f4cb1d33d2d344fdd9, type: 3}
+  snow1: {fileID: 21300000, guid: fd4cc7b258e959e4a9afbdcbb3718a0d, type: 3}
+  snow2: {fileID: 21300000, guid: 245cc1541e0b87f46a79ceeae817927c, type: 3}
+  cloudHolder: {fileID: 0}
+  cloud: {fileID: 103494, guid: d5229a62237418042b8980d1e3f03e87, type: 2}
+--- !u!114 &11417664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3a3c3c1c5e9634a97e270271d909e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingMoney: 2000
+  moneyCount: {fileID: 0}
+  waterCount: {fileID: 0}
+  fertilizerCount: {fileID: 0}
+  synthCount: {fileID: 0}
+  heatCount: {fileID: 0}
+  sprayCount: {fileID: 0}
+--- !u!114 &11428312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ac7ae3b4158e944a2bad0a9dd18c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sm: {fileID: 0}
+  animalHolder: {fileID: 0}
+  pollinators:
+  - {fileID: 131728, guid: cce5aa7cdc9f8f94f9b7a147cfb63b75, type: 2}
+  - {fileID: 193908, guid: c97cf4f571852d34f9c3bb610133a98a, type: 2}
+  pest: {fileID: 141308, guid: 191235f0308163b489ce9e75f830d5f5, type: 2}
+  hornet: {fileID: 197908, guid: 68221fd80976eac4ca319ace40759b79, type: 2}
+  hostileBird: {fileID: 181048, guid: 60a06790f943c92439e303d62086d3f6, type: 2}
+  winterAnimal: {fileID: 148114, guid: 215af909be2f95d4c848c8ba50dad47e, type: 2}
+  rainyAnimal: {fileID: 156318, guid: 895f0ca73ee5e394ba28dccada2413ef, type: 2}
+--- !u!114 &11469992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4823b59e67874c488592ee520a682e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wm: {fileID: 11410832}
+  filter: {fileID: 0}
+  background: {fileID: 0}
+  spring: {fileID: 21300000, guid: e187ee7d22c5d6e4da9850416a02ce52, type: 3}
+  summer: {fileID: 21300002, guid: e187ee7d22c5d6e4da9850416a02ce52, type: 3}
+  autumn: {fileID: 21300004, guid: e187ee7d22c5d6e4da9850416a02ce52, type: 3}
+  winter: {fileID: 21300006, guid: e187ee7d22c5d6e4da9850416a02ce52, type: 3}
+  tree1: {fileID: 0}
+  tree2: {fileID: 0}
+  springTree: {fileID: 21300000, guid: 8708503efb0b5a646a65fdb8918b788b, type: 3}
+  summerTree: {fileID: 21300002, guid: 8708503efb0b5a646a65fdb8918b788b, type: 3}
+  autumnTree: {fileID: 21300004, guid: 8708503efb0b5a646a65fdb8918b788b, type: 3}
+  winterTree: {fileID: 21300006, guid: 8708503efb0b5a646a65fdb8918b788b, type: 3}
+--- !u!114 &11480030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b738708910afb408009869a88fdd6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 0}
+  menu: {fileID: 0}
+  pm: {fileID: 0}
+  bm: {fileID: 11428312}
+  im: {fileID: 11417664}
+  sm: {fileID: 11469992}
+  wm: {fileID: 11410832}
+  lunaSol: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 144410}
+  m_IsPrefabParent: 1
