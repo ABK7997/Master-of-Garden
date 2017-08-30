@@ -26,24 +26,24 @@ public class BeastManager : MonoBehaviour {
             switch(season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 5);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 5);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 16);
+                    spawnHigh(hornet, 8);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 5);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 5);
+                    spawner(hostileBird, 3);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
                     groundSpawner2(winterAnimal, 3);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 10);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 4);
+                    groundSpawner2(winterAnimal, 5);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 2);
                     break;
             }
         }
@@ -58,7 +58,7 @@ public class BeastManager : MonoBehaviour {
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 4);
+                    spawnHigh(hornet, 2);
                     break;
 
                 case "AUTUMN":
@@ -78,26 +78,26 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 10);
+                    spawner(hostileBird, 5);
                     if (chance < 5) spawner(pest, 1);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 2);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 8);
+                    spawnHigh(hornet, 4);
                     if (chance < 15) spawner(pest, 1);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 7);
-                    if (chance < 25) spawner(pest, 2);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 10);
+                    spawner(hostileBird, 3);
+                    if (chance < 25) spawner(pest, 1);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
                     break;
 
                 case "WINTER":
-                    spawner(hostileBird, 10);
-                    groundSpawner(winterAnimal, 5);
-                    if (weather == "SNOWY") groundSpawner(winterAnimal, 2);
+                    spawner(hostileBird, 5);
+                    groundSpawner(winterAnimal, 2);
+                    if (weather == "SNOWY") groundSpawner(winterAnimal, 1);
                     break;
             }
         }
@@ -123,7 +123,7 @@ public class BeastManager : MonoBehaviour {
             {
                 case "SPRING":
                     if (pollination) spawner(pollinators[0], 1);
-                    spawner(hostileBird, 10);
+                    spawner(hostileBird, 5);
                     if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
                     break;
 
@@ -133,14 +133,14 @@ public class BeastManager : MonoBehaviour {
                     break;
 
                 case "AUTUMN":
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 8);
-                    spawner(hostileBird, 5);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 4);
+                    spawner(hostileBird, 3);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 10);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 4);
+                    groundSpawner2(winterAnimal, 5);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 2);
                     break;
             }
         }
@@ -151,24 +151,24 @@ public class BeastManager : MonoBehaviour {
             {
                 case "SPRING":
                     if (pollination) spawner(pollinators[0], 1);
-                    spawner(hostileBird, 4);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 1);
                     break;
 
                 case "SUMMER":
                     if (pollination) spawner(pollinators[1], 1);
-                    spawnHigh(hornet, 4);
+                    spawnHigh(hornet, 2);
                     break;
 
                 case "AUTUMN":
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
-                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
+                    spawner(hostileBird, 1);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 2);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 2);
+                    groundSpawner2(winterAnimal, 1);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 1);
                     break;
             }
         }
@@ -178,24 +178,24 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 20);
+                    spawner(hostileBird, 10);
                     if (pollination) spawner(pollinators[0], 1);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 3);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 2);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 10);
+                    spawnHigh(hornet, 5);
                     if (pollination) spawner(pollinators[1], 1);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 10);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
+                    spawner(hostileBird, 5);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 3);
                     break;
 
                 case "WINTER":
-                    spawner(hostileBird, 15);
-                    groundSpawner(winterAnimal, 3);
+                    spawner(hostileBird, 7);
+                    groundSpawner(winterAnimal, 2);
                     if (weather == "SNOWY") groundSpawner(winterAnimal, 1);
                     break;
             }
@@ -210,25 +210,25 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 5);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
+                    groundSpawner2(winterAnimal, 1);
+                    break;
+
+                case "SUMMER":
+                    spawnHigh(hornet, 8);
+                    break;
+
+                case "AUTUMN":
+                    spawner(hostileBird, 2);
                     if (weather == "RAINY") groundSpawner2(rainyAnimal, 5);
                     groundSpawner2(winterAnimal, 3);
                     break;
 
-                case "SUMMER":
-                    spawnHigh(hornet, 16);
-                    break;
-
-                case "AUTUMN":
-                    spawner(hostileBird, 3);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 10);
-                    groundSpawner2(winterAnimal, 5);
-                    break;
-
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 12);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 6);
+                    groundSpawner2(winterAnimal, 6);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 3);
                     break;
             }
         }
@@ -238,23 +238,23 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 3);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 1);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 5);
+                    spawnHigh(hornet, 2);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 3);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 2);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 2);
+                    groundSpawner2(winterAnimal, 1);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 1);
                     break;
             }
         }
@@ -264,22 +264,22 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 10);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
+                    spawner(hostileBird, 5);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 2);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 12); break;
+                    spawnHigh(hornet, 6); break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 5);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 10);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
                     break;
 
                 case "WINTER":
-                    spawner(hostileBird, 5);
-                    groundSpawner(winterAnimal, 5);
-                    if (weather == "SNOWY") groundSpawner(winterAnimal, 3);
+                    spawner(hostileBird, 2);
+                    groundSpawner(winterAnimal, 3);
+                    if (weather == "SNOWY") groundSpawner(winterAnimal, 1);
                     break;
             }
         }  
@@ -293,25 +293,25 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 7);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
-                    groundSpawner2(winterAnimal, 5);
+                    spawner(hostileBird, 3);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 1);
+                    groundSpawner2(winterAnimal, 2);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 20);
+                    spawnHigh(hornet, 8);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 6);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 5);
-                    groundSpawner2(winterAnimal, 10);
+                    spawner(hostileBird, 3);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
+                    groundSpawner2(winterAnimal, 4);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 20);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 10);
+                    groundSpawner2(winterAnimal, 7);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 5);
                     break;
             }
         }
@@ -321,23 +321,23 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 3);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 2);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 1);
                     break;
 
                 case "SUMMER":
-                    spawnHigh(hornet, 4);
+                    spawnHigh(hornet, 2);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 3);
-                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 3);
+                    spawner(hostileBird, 2);
+                    if (weather == "RAINY") groundSpawner2(rainyAnimal, 1);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner2(winterAnimal, 3);
-                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 2);
+                    groundSpawner2(winterAnimal, 2);
+                    if (weather == "SNOWY") groundSpawner2(winterAnimal, 1);
                     break;
             }
         }
@@ -347,23 +347,23 @@ public class BeastManager : MonoBehaviour {
             switch (season)
             {
                 case "SPRING":
-                    spawner(hostileBird, 15);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 2);
+                    spawner(hostileBird, 6);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 1);
                     break;
 
                 case "SUMMER":
-                    spawner(hostileBird, 12);
+                    spawner(hostileBird, 5);
                     break;
 
                 case "AUTUMN":
-                    spawner(hostileBird, 12);
-                    if (weather == "RAINY") groundSpawner(rainyAnimal, 5);
+                    spawner(hostileBird, 5);
+                    if (weather == "RAINY") groundSpawner(rainyAnimal, 2);
                     break;
 
                 case "WINTER":
                     spawner(hostileBird, 0);
-                    groundSpawner(winterAnimal, 10);
-                    if (weather == "SNOWY") groundSpawner(winterAnimal, 5);
+                    groundSpawner(winterAnimal, 4);
+                    if (weather == "SNOWY") groundSpawner(winterAnimal, 2);
                     break;
             }
         }
